@@ -1,0 +1,32 @@
+vibecart shopping websites----------!(Requrement...)
+|
+|-------------------header(navbar)
+|                          |
+                           |
+                            --------------------multipages, cart,login,wishlist
+|
+|
+|
+---------------------Body(home-pages)
+                      |
+                      |
+                       ----------------- slides template, product list, multi product- box, full product pages,                    
+|
+|
+|
+-------------------------footer
+
+User
+|
+|
+----------------------login -page/singup,order and history,profile management,
+
+client
+|
+|
+-----------------admin page, dashboard pages, cantrol-pages,
+
+check and payment
+|
+|
+-------------------payment gate way(upi card), net banking, cash,

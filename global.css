@@ -1,0 +1,221 @@
+/* Navbar ko top layer par rakhne ke liye */
+
+.navbar {
+    position: relative;
+    z-index: 1050 !important;
+}
+
+
+/* Dropdown menus ko overflow na hone dene aur layered rakhne ke liye */
+
+.navbar .dropdown-menu {
+    z-index: 1055 !important;
+}
+
+
+/* User profile button styling fix */
+
+.user-dropdown-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+
+.cus-bg {
+    background: linear-gradient(blue, rgb(163, 163, 226));
+}
+
+.cus-size {
+    min-height: 80vh;
+    max-height: fit-content;
+}
+
+
+/* Pushing the footer down with 100vh gap from simulated content */
+
+.footer-spacer {
+    margin-top: 100vh;
+}
+
+.footer-brand-title {
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.social-btn {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    background-color: #0d6efd !important;
+    color: #fff !important;
+    border-color: #0d6efd !important;
+}
+
+.hover-link {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.hover-link:hover {
+    color: #0d6efd !important;
+    padding-left: 5px;
+}
+
+.newsletter-input:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+.font-s {
+    font-size: 90px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.ml {
+    margin-left: 20px;
+}
+
+
+/* Category Container Styling */
+
+.category-img {
+    position: relative;
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+}
+
+
+/* Image Zoom Effect on Hover */
+
+.category-img img {
+    transition: transform 0.4s ease;
+    object-fit: cover;
+}
+
+.category-img:hover img {
+    transform: scale(1.08);
+    /* Zoom effect */
+}
+
+
+/* Overlay Link Styling */
+
+.category-img .category-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark translucent overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Text Inside Overlay */
+
+.category-img .category-name p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    border: 2px solid #ffffff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transform: translateY(15px);
+    transition: transform 0.3s ease;
+}
+
+
+/* Show Overlay & Animate Text on Hover */
+
+.category-img:hover .category-name {
+    opacity: 1;
+}
+
+.category-img:hover .category-name p {
+    transform: translateY(0);
+}
+
+.product-card {
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.08);
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1 !important;
+}
+
+
+/* Navbar Styling */
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+/* Filter Sidebar Sticky */
+
+.filter-sidebar {
+    top: 90px;
+    border-radius: 16px;
+}
+
+
+/* Action Buttons */
+
+.action-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(76, 91, 112, 0.705);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
+    }
+}
+
+.pulse-outline {
+    animation: pulse-border 2s infinite;
+}

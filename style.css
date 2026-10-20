@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+}
+
+.login-card {
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+/* Left Side Styling */
+
+.form-section {
+    padding: 3rem 2.5rem;
+}
+
+.brand-logo {
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
+    color: #0f172a;
+}
+
+.brand-logo span {
+    color: var(--primary-color);
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-social {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    color: #334155;
+    background: #ffffff;
+    transition: background 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f1f5f9;
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cbd5e1;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+
+/* Right Side - Pure Image Banner Area */
+
+.offer-image-section {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+}
+
+
+/* Floating Image Badge / Promotional Graphic Overlay */
+
+.offer-overlay-card {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.offer-overlay-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
